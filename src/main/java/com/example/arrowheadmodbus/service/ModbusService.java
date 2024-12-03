@@ -52,7 +52,12 @@ public class ModbusService {
     public boolean[] readDiscreteInputs(int startAddress, int count) {
         try {
             BitVector bitVector = modbusMaster.readInputDiscretes(startAddress, count);
-            return bitVector.toBooleanArray(); // Use toBooleanArray() instead of getBits()
+            boolean[] result = new boolean[count];
+            for (int i = 0; i < count; i++) {
+                result[i] = bitVector.getBit(i);
+            }
+            return result;
+
         } catch (ModbusException e) {
             throw new RuntimeException("Error reading Modbus discrete inputs.", e);
         }

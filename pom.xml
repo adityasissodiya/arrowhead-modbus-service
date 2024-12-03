@@ -20,7 +20,7 @@
   </parent>
 
   <properties>
-    <java.version>11</java.version> <!-- Ensure this matches your JDK version -->
+    <java.version>17</java.version> <!-- Ensure this matches your JDK version -->
   </properties>
 
   <dependencies>
@@ -60,7 +60,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>4.8.1</version>
+      <version>4.5.1</version>
       <scope>test</scope>
     </dependency>
 
@@ -93,6 +93,9 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.example.arrowheadmodbus.ArrowheadModbusApplication</mainClass>
+        </configuration>
       </plugin>
 
       <!-- Maven Compiler Plugin -->
