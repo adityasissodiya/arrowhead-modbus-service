@@ -5,6 +5,7 @@ import com.example.arrowheadmodbus.dto.SystemRequestDTO;
 import com.example.arrowheadmodbus.utils.ArrowheadHttpClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
 import java.util.Map; // Import Map
@@ -17,28 +18,18 @@ public class ArrowheadRegistrationService {
     @Value("${arrowhead.service.registry.url}")
     private String serviceRegistryUrl;
 
-    private final ArrowheadHttpClient arrowheadHttpClient;
+    private final RestTemplate restTemplate;
 
-    public ArrowheadRegistrationService(ArrowheadHttpClient arrowheadHttpClient) {
-        this.arrowheadHttpClient = arrowheadHttpClient;
+    public ArrowheadRegistrationService(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
     }
 
-    @PostConstruct
-    public void registerServices() {
-        registerService("/modbus/read-inputs", "ModbusReadService");
-        registerService("/modbus/write-coil", "ModbusWriteService");
-    }
-
-    private void registerService(String serviceUri, String serviceDefinition) {
+    public void registerService() {
+        // Construct the registration request payload
         ServiceRegistryRequestDTO request = new ServiceRegistryRequestDTO();
-        request.setServiceDefinition(serviceDefinition);
-        request.setProviderSystem(new SystemRequestDTO("ModbusApplication", "localhost", 8080, null));
-        request.setServiceUri(serviceUri);
-        request.setMetadata(Collections.singletonMap("security", "token"));
+        // Populate request with necessary details
 
-        String url = serviceRegistryUrl + "/register";
-
-        arrowheadHttpClient.post(url, request);
-        System.out.println(serviceDefinition + " registered with Arrowhead.");
+        // Send registration request
+        restTemplate.postForEntity(serviceRegistryUrl + "/register", request, Void.class);
     }
 }

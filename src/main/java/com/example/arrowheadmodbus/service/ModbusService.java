@@ -70,4 +70,5 @@ public class ModbusService {
             throw new RuntimeException("Error writing to Modbus coil.", e);
         }
     }
+
 }
