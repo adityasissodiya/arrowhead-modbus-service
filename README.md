@@ -94,7 +94,7 @@ arrowhead-modbus-service/
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/arrowhead-modbus-service.git
+   git clone https://github.com/adityasissodiya/arrowhead-modbus-service.git
    cd arrowhead-modbus-service
    ```
 
@@ -115,7 +115,7 @@ Modify `src/main/resources/application.properties` to configure Modbus settings:
 ```properties
 # Modbus settings
 modbus.slave.ip=192.168.1.2
-modbus.slave.port=502
+modbus.slave.port=503
 modbus.unit.id=1
 ```
 
@@ -278,9 +278,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## **Contact**
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Author**: Aditya Sissodiya
+- **Email**: aditya.sissodiya@ltu.se
+- **GitHub**: [adityasissodiya](https://github.com/adityasissodiya)
 
 For any questions or support, feel free to reach out.
 
