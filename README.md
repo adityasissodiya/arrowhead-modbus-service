@@ -180,11 +180,14 @@ java -jar target/arrowhead-modbus-service-1.0.0.jar
   - `count` (optional, default `2`): Number of inputs to read.
 
 **Example Request**:
-
+SSL Enabled:
 ```bash
 curl -X GET "https://localhost:8080/modbus/read-inputs?startAddress=0&count=2" -k
 ```
-
+SSL Disabled:
+```bash
+curl -X GET "http://localhost:8080/modbus/read-inputs?startAddress=0&count=2"
+```
 **Example Response**:
 
 ```json
@@ -205,13 +208,19 @@ curl -X GET "https://localhost:8080/modbus/read-inputs?startAddress=0&count=2" -
   ```
 
 **Example Request**:
-
+SSL Enabled:
 ```bash
 curl -X POST "https://localhost:8080/modbus/write-coil" \
      -H "Content-Type: application/json" \
      -d '{"coilAddress": 0, "coilValue": true}' -k
 ```
-
+or 
+SSL Disabled:
+```bash
+curl -X POST "http://localhost:8080/modbus/write-coil" \
+-H "Content-Type: application/json" \
+-d '{"coilAddress": 8, "coilValue": true}'
+```
 **Example Response**:
 
 ```
