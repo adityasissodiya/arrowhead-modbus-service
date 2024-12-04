@@ -2,6 +2,7 @@ C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arr
 C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arrowheadmodbus\ArrowheadModbusApplication.java
 C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arrowheadmodbus\controller\ModbusWriteController.java
 C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arrowheadmodbus\dto\ServiceRegistryRequestDTO.java
+C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arrowheadmodbus\dto\ModbusReadResponseDTO.java
 C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arrowheadmodbus\service\ModbusService.java
 C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arrowheadmodbus\service\ArrowheadRegistrationService.java
 C:\Users\adisis\Downloads\arrowhead-modbus-service\src\main\java\com\example\arrowheadmodbus\controller\ModbusReadController.java

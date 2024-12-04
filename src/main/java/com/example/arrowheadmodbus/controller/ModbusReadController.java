@@ -1,8 +1,12 @@
 package com.example.arrowheadmodbus.controller;
 
+import com.example.arrowheadmodbus.dto.ModbusReadResponseDTO;
 import com.example.arrowheadmodbus.service.ModbusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/modbus")
@@ -12,10 +16,17 @@ public class ModbusReadController {
     private ModbusService modbusService;
 
     @GetMapping("/read-inputs")
-    public boolean[] readInputs(
+    public List<ModbusReadResponseDTO> readInputs(
             @RequestParam(defaultValue = "0") int startAddress,
-            @RequestParam(defaultValue = "2") int count
+            @RequestParam(defaultValue = "9") int count
     ) {
-        return modbusService.readDiscreteInputs(startAddress, count);
+        boolean[] values = modbusService.readDiscreteInputs(startAddress, count);
+        List<ModbusReadResponseDTO> responseList = new ArrayList<>();
+
+        for (int i = 0; i < count; i++) {
+            responseList.add(new ModbusReadResponseDTO(startAddress + i, values[i]));
+        }
+
+        return responseList;
     }
 }

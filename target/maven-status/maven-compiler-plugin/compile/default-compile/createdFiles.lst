@@ -6,6 +6,7 @@ com\example\arrowheadmodbus\controller\ModbusWriteController.class
 com\example\arrowheadmodbus\utils\ArrowheadHttpClient.class
 com\example\arrowheadmodbus\service\OrchestratorService.class
 com\example\arrowheadmodbus\config\AppConfig.class
+com\example\arrowheadmodbus\dto\ModbusReadResponseDTO.class
 com\example\arrowheadmodbus\ArrowheadModbusApplication.class
 com\example\arrowheadmodbus\service\ArrowheadRegistrationService.class
 com\example\arrowheadmodbus\controller\ModbusReadController.class

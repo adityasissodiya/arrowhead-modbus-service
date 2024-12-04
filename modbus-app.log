@@ -3561,3 +3561,196 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2024-12-04 11:01:34 INFO  c.e.a.ModbusServiceTests - Starting ModbusServiceTests using Java 17.0.13 on C0418 with PID 16640 (started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
 2024-12-04 11:01:34 INFO  c.e.a.ModbusServiceTests - No active profile set, falling back to 1 default profile: "default"
 2024-12-04 11:01:35 INFO  c.e.a.ModbusServiceTests - Started ModbusServiceTests in 1.421 seconds (JVM running for 2.026)
+2024-12-04 11:01:46 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 14344 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 11:01:46 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 11:01:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 11:01:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 11:01:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 11:01:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 11:01:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 484 ms
+2024-12-04 11:01:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 11:01:46 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 0.965 seconds (JVM running for 1.156)
+2024-12-04 11:05:03 INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x030x0e0x170x040xb20xe5 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:263)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-04 11:06:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 11:06:52 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 11:06:52 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 11:07:42 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.example.arrowheadmodbus.controller.ModbusWriteController.writeCoil(com.example.arrowheadmodbus.dto.ModbusRequestDTO)]
+2024-12-04 11:08:32 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.example.arrowheadmodbus.controller.ModbusWriteController.writeCoil(com.example.arrowheadmodbus.dto.ModbusRequestDTO)]
+2024-12-04 11:10:35 INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x030xa8pu0x000x800xe6q\f0xe6m0x15{0x04=0xd9(0xf00xac0x05}r/0x9020x04Y~0xb50x9f!0xd8 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:263)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-04 11:28:48 INFO  c.e.a.ModbusServiceTests - Starting ModbusServiceTests using Java 17.0.13 on C0418 with PID 18488 (started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 11:28:48 INFO  c.e.a.ModbusServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 11:28:49 INFO  c.e.a.ModbusServiceTests - Started ModbusServiceTests in 1.483 seconds (JVM running for 2.171)
+2024-12-04 11:28:57 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 13204 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 11:28:57 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 11:28:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 11:28:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 11:28:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 11:28:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 11:28:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 525 ms
+2024-12-04 11:28:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 11:28:58 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 1.037 seconds (JVM running for 1.234)
+2024-12-04 11:29:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 11:29:09 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 11:29:09 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 11:36:52 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-12-04 11:37:25 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-12-04 11:37:58 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-12-04 12:39:23 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 10672 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 12:39:23 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 12:39:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 12:39:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 12:39:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 12:39:24 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 12:39:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 507 ms
+2024-12-04 12:39:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 12:39:24 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 1.002 seconds (JVM running for 1.207)
+2024-12-04 12:40:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 12:40:03 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 12:40:03 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 13:07:33 INFO  c.e.a.ModbusServiceTests - Starting ModbusServiceTests using Java 17.0.13 on C0418 with PID 19764 (started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 13:07:33 INFO  c.e.a.ModbusServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 13:07:34 INFO  c.e.a.ModbusServiceTests - Started ModbusServiceTests in 1.388 seconds (JVM running for 2.0)
+2024-12-04 13:07:43 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 18516 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 13:07:43 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 13:07:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 13:07:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 13:07:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 13:07:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 13:07:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 483 ms
+2024-12-04 13:07:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 13:07:43 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 0.978 seconds (JVM running for 1.169)
+2024-12-04 13:08:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 13:08:04 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 13:08:04 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 13:16:25 INFO  c.e.a.ModbusServiceTests - Starting ModbusServiceTests using Java 17.0.13 on C0418 with PID 2564 (started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 13:16:25 INFO  c.e.a.ModbusServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 13:16:26 INFO  c.e.a.ModbusServiceTests - Started ModbusServiceTests in 1.409 seconds (JVM running for 1.988)
+2024-12-04 13:16:34 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 14008 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 13:16:34 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 13:16:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 13:16:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 13:16:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 13:16:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 13:16:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 473 ms
+2024-12-04 13:16:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 13:16:34 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 0.973 seconds (JVM running for 1.176)
+2024-12-04 13:16:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 13:16:44 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 13:16:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 14:05:06 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 17848 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 14:05:06 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 14:05:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 14:05:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 14:05:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 14:05:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 14:05:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 491 ms
+2024-12-04 14:05:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 14:05:07 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 0.987 seconds (JVM running for 1.182)
+2024-12-04 14:14:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 14:14:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 14:14:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 14:14:59 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Error reading Modbus discrete inputs.] with root cause
+com.ghgande.j2mod.modbus.ModbusIOException: Connection failed for /192.168.1.2:503 Connect timed out
+	at com.ghgande.j2mod.modbus.io.ModbusTCPTransaction.execute(ModbusTCPTransaction.java:134)
+	at com.ghgande.j2mod.modbus.facade.AbstractModbusMaster.readInputDiscretes(AbstractModbusMaster.java:179)
+	at com.ghgande.j2mod.modbus.facade.AbstractModbusMaster.readInputDiscretes(AbstractModbusMaster.java:390)
+	at com.example.arrowheadmodbus.service.ModbusService.readDiscreteInputs(ModbusService.java:54)
+	at com.example.arrowheadmodbus.controller.ModbusReadController.readInputs(ModbusReadController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-04 14:16:34 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 25236 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 14:16:34 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 14:16:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 14:16:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 14:16:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 14:16:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 14:16:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 534 ms
+2024-12-04 14:16:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 14:16:35 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 1.058 seconds (JVM running for 1.256)
+2024-12-04 14:16:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 14:16:37 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 14:16:37 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 14:54:04 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 14536 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 14:54:04 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 14:54:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 14:54:05 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 14:54:05 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 14:54:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 14:54:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 485 ms
+2024-12-04 14:54:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 14:54:05 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 0.987 seconds (JVM running for 1.201)
+2024-12-04 14:55:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 14:55:14 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 14:55:14 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
