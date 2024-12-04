@@ -3,6 +3,7 @@
 A Spring Boot application that integrates Modbus TCP communication with the Eclipse Arrowhead SOA framework. The application allows reading discrete inputs and writing coils to a Modbus TCP Slave, while registering services with the Arrowhead Core Systems for dynamic orchestration and secure communication.
 
 Also checkout: https://github.com/vanDeventer/mbaigodemo/tree/master/modboss
+
 ---
 
 ## **Table of Contents**
