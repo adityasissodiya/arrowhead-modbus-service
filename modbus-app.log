@@ -3546,3 +3546,18 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2024-12-03 14:41:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-12-03 14:41:16 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-12-03 14:41:16 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-04 09:56:04 INFO  c.e.a.ArrowheadModbusApplication - Starting ArrowheadModbusApplication using Java 17.0.13 on C0418 with PID 18668 (C:\Users\adisis\Downloads\arrowhead-modbus-service\target\classes started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 09:56:04 INFO  c.e.a.ArrowheadModbusApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 09:56:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 09:56:05 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 09:56:05 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-12-04 09:56:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-04 09:56:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 595 ms
+2024-12-04 09:56:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 09:56:05 INFO  c.e.a.ArrowheadModbusApplication - Started ArrowheadModbusApplication in 1.184 seconds (JVM running for 1.412)
+2024-12-04 09:56:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 09:56:26 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 09:56:26 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-04 11:01:34 INFO  c.e.a.ModbusServiceTests - Starting ModbusServiceTests using Java 17.0.13 on C0418 with PID 16640 (started by adisis in C:\Users\adisis\Downloads\arrowhead-modbus-service)
+2024-12-04 11:01:34 INFO  c.e.a.ModbusServiceTests - No active profile set, falling back to 1 default profile: "default"
+2024-12-04 11:01:35 INFO  c.e.a.ModbusServiceTests - Started ModbusServiceTests in 1.421 seconds (JVM running for 2.026)

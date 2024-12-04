@@ -68,14 +68,31 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!-- Arrowhead Core Library (if available) -->
-    <!--
+
     <dependency>
-        <groupId>eu.arrowhead</groupId>
-        <artifactId>arrowhead-core-library</artifactId>
-        <version>4.2.1</version>
+      <groupId>ai.aitia</groupId>
+      <artifactId>arrowhead-core-common-essentials-java-spring</artifactId>
+      <version>4.6.0.0</version>
     </dependency>
-    -->
+
+    <!-- Arrowhead Core Library (if available) -->
+    <!-- Arrowhead Common Dependency -->
+    <!--
+   <dependency>
+     <groupId>eu.arrowhead.common</groupId>
+     <artifactId>common</artifactId>
+     <version>4.6.2</version>
+     <scope>system</scope>
+     <systemPath>${project.basedir}/libs/arrowhead-core-common-4.6.2.jar</systemPath>
+   </dependency>
+   -->
+   <!--
+   <dependency>
+       <groupId>eu.arrowhead</groupId>
+       <artifactId>arrowhead-core-library</artifactId>
+       <version>4.2.1</version>
+   </dependency>
+   -->
 
     <!-- Additional Dependencies -->
 

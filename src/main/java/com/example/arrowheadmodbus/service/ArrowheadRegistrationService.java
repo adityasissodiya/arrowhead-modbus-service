@@ -1,16 +1,11 @@
 package com.example.arrowheadmodbus.service;
 
-import com.example.arrowheadmodbus.dto.ServiceRegistryRequestDTO;
-import com.example.arrowheadmodbus.dto.SystemRequestDTO;
-import com.example.arrowheadmodbus.utils.ArrowheadHttpClient;
+
+import eu.arrowhead.common.dto.shared.ServiceRegistryRequestDTO;
+import eu.arrowhead.common.dto.shared.SystemRequestDTO;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import javax.annotation.PostConstruct;
-import java.util.Map; // Import Map
-import java.util.HashMap; // Import HashMap if needed
-import java.util.Collections; // Import Collections if needed
 
 @Service
 public class ArrowheadRegistrationService {
@@ -24,12 +19,22 @@ public class ArrowheadRegistrationService {
         this.restTemplate = restTemplate;
     }
 
-    public void registerService() {
-        // Construct the registration request payload
-        ServiceRegistryRequestDTO request = new ServiceRegistryRequestDTO();
-        // Populate request with necessary details
+    public void registerServiceToServiceRegistry(ServiceRegistryRequestDTO serviceRegistryRequest) {
+        // Set the service definition for the request
+        serviceRegistryRequest.setServiceDefinition("modbus-read-inputs");
 
-        // Send registration request
-        restTemplate.postForEntity(serviceRegistryUrl + "/register", request, Void.class);
+        // Create a provider object and set its properties
+        SystemRequestDTO provider = new SystemRequestDTO();
+        provider.setSystemName("modbus-service");
+        provider.setAddress("localhost");
+        provider.setPort(8080);
+        provider.setAuthenticationInfo(""); // Add security token if required
+
+        // Set the provider in the request
+        serviceRegistryRequest.setProviderSystem(provider);
+
+        // Send the registration request to the service registry
+        restTemplate.postForEntity(serviceRegistryUrl + "/register", serviceRegistryRequest, Void.class);
     }
+
 }
